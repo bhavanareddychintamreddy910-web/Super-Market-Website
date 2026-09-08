@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHAVANA MART - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Store Leadership / Founder Section Layout */
+    .founder-panel {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .founder-image-container {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      border: 2px solid rgba(16, 185, 129, 0.4);
+    }
+
+    .founder-image-container img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .founder-image-container:hover img {
+      transform: scale(1.03);
+    }
+
+    .founder-tag {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #34d399;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .founder-title {
+      font-size: 2.2rem;
+      color: #34d399;
+      margin-bottom: 0.3rem;
+    }
+
+    .founder-role {
+      font-size: 1rem;
+      color: #10b981;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+
+    .founder-quote {
+      border-left: 3px solid #10b981;
+      padding-left: 1rem;
+      font-style: italic;
+      margin: 1.2rem 0;
+      background: rgba(255, 255, 255, 0.05);
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    @media (max-width: 900px) {
+      .founder-panel {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+
+      .founder-image-container img {
+        height: 320px;
+      }
+    }
+  </style>
+</head>
+<body class="home-page">
+
+  <header class="navbar">
+    <a href="index.html" class="logo">BHAVANA MART</a>
+    <nav>
+      <a href="index.html" target="_blank">Home</a>
+      <a href="about.html" target="_blank">About</a>
+      <a href="items.html" target="_blank">Items</a>
+      <a href="contact.html" target="_blank">Contact</a>
+      <a href="cart.html" target="_blank" class="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Hero Banner -->
+    <section class="glass-panel" style="text-align: center; padding: 4rem 2rem;">
+      <h1>Welcome to BHAVANA MART</h1>
+      <p>Your ultimate destination for fresh groceries, daily essentials, and world-class retail service right at your fingertips.</p>
+      <a href="items.html" target="_blank" class="btn">Explore All Items</a>
+    </section>
+
+    <!-- Leadership / Founder Section -->
+    <section class="glass-panel founder-panel">
+      <div class="founder-image-container">
+        <img src="Bhavana.jpeg" alt="Founder of Bhavana Mart">
+      </div>
+      <div class="founder-info">
+        <span class="founder-tag">Leadership</span>
+        <h2 class="founder-title">Meet Our Founder</h2>
+        <p class="founder-role">Founder & Managing Director</p>
+        <p>
+          Founded with a commitment to quality, <strong>BHAVANA MART</strong> was built on the mission to provide every household with farm-fresh produce, trusted local products, and seamless customer service.
+        </p>
+        <blockquote class="founder-quote">
+          "Our goal is simple: deliver uncompromising fresh quality and affordable everyday pricing directly to your family's doorstep."
+        </blockquote>
+        <a href="about.html" target="_blank" class="btn" style="margin-top: 0.5rem;">Learn More About Us</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="glass-panel">
+      <h2>Why Shop With Us?</h2>
+      <p>At BHAVANA MART, we prioritize quality, affordability, and convenience. We stock thousands of products across multiple categories to ensure your home never runs out of essentials.</p>
+      
+      <div class="grid-3">
+        <div class="card">
+          <h3>🌱 100% Farm Fresh</h3>
+          <p>Directly sourced organic fruits and vegetables delivered daily to maintain maximum nutrition and flavor.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Superfast Delivery</h3>
+          <p>Order online and receive lightning-fast doorstep delivery with real-time order tracking.</p>
+        </div>
+        <div class="card">
+          <h3>💰 Guaranteed Best Prices</h3>
+          <p>Enjoy incredible discounts, wholesale deals, and daily special offers across all departments.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 BHAVANA MART. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
